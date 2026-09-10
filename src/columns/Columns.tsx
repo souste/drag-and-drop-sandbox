@@ -5,13 +5,16 @@ import type { ColumnBody } from '../types/Types';
 function Columns() {
   return (
     <div>
-      <p>Columns</p>
-      {seededColumns.map((column: ColumnBody) => (
-        <div key={column.id}>
-          <p>{column.title}</p>
-          <Tasks tasks={column.tasks} />
-        </div>
-      ))}
+      <div className="flex flex-row justify-center gap-10">
+        {seededColumns.map((column: ColumnBody) => (
+          <div key={column.id} className="border-2 border-white p-5">
+            <p className="mb-5 border-b border-white pb-2.5 text-center text-2xl font-bold text-white">
+              {column.title}
+            </p>
+            <Tasks tasks={column.tasks} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
