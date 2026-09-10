@@ -7,7 +7,7 @@ function Tasks({ tasks }: TasksBody) {
       {tasks.map((task) => (
         <div
           key={task.id}
-          className="text-red bg-yellow-300 p-3 pt-7 pb-7 text-gray-900"
+          className="bg-yellow-300 px-3 py-7 text-gray-900 shadow-lg shadow-white/30"
         >
           <p>{task.title}</p>
         </div>
