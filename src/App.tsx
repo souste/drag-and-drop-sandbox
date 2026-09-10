@@ -1,7 +1,12 @@
 import './App.css';
+import SingleBoard from './boards/SingleBoard';
 
 function App() {
-  return <div>This is the app!</div>;
+  return (
+    <div>
+      <SingleBoard />
+    </div>
+  );
 }
 
 export default App;
